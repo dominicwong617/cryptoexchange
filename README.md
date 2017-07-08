@@ -24,7 +24,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+client = Cryptoexchange::Client.new
+pairs = client.pairs('livecoin')
+client.ticker(pairs.last)
+```
 
 ## Development
 
